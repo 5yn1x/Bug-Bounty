@@ -1,2 +1,3 @@
-# Recon-Automation-
-scripts that auomate the recon process
+#Bug Bounty!
+
+Automation scripts & Resources for bug bounty!!
