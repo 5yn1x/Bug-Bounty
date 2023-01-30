@@ -51,3 +51,20 @@ if response.status_code == 200:
   print('Notification sent successfully')
 else:
   print('Error sending notification')
+
+  
+#-------------simple method-------------#
+
+# import requests
+
+
+# TOKEN = "YOUR_TOKEN"
+# chat_id = "CHAT_ID"
+
+
+# message = "got you!"
+# # url = f"https://api.telegram.org/bot{TOKEN}/getUpdates"
+# url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_id}&text={message}"
+
+
+# print(requests.get(url).json())
