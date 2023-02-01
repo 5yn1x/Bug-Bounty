@@ -1,0 +1,60 @@
+Burpsuite extensions :
+    Retire.JS //search for vulnerable js files 
+
+Recon for Bug bounty:
+
+    1. Basic Recon
+        Wappalyzer
+        crt.sh
+        built with
+        wayback
+        nslookup
+        whois
+
+    2. Sub domain hunting
+        Tools:
+        nmap
+        waybackurls
+        theHarvester
+        Sublist3r //some problem
+        subfinder //need go for installation
+        assetfinder
+        amass:
+        ex- amass enum -passive -d domain.name
+
+        find domain
+
+    3. Github Recon    
+     
+    4. Probe the subdomains
+        httprobe :
+        checking for the valid subdomains
+        ex - cat domian.txt | httprobe
+
+        urlprobe
+
+    5. Fuzzing the domains :
+        Tools:
+        ffuf
+        dirb
+        go buster
+        wfuzz
+
+    
+    --------------Tools--------------
+    zone transfer vulns //usually in prot 53 
+    tool :
+    dig :
+    ex - dig axfr @10.10.10.123 friendzone.red >> zone //output file
+
+    for sorting the output :
+    cat zone | grep friendzone | grep IN | wk '{print $1}' | sort -u  
+
+
+    WP-scan : 
+    for scanning wordpress sites
+    ex - wpscan --url http://domian.com -e ap --plugins-detection aggressive
+
+
+    
+

