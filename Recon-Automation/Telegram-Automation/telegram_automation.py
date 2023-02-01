@@ -1,10 +1,12 @@
 #-------------simple method-------------#
+#create a bot with Godfather and get the API
+
 
 import requests
 
 
-TOKEN = "6012451460:AAGuTsxJoaeJ5Pqbqac3fW08siFZhN7Gy2E"
-chat_id = "826415224"
+TOKEN = "API_TOKEN"
+chat_id = "CHAT_ID"
 
 
 message = "Hello how are you!"
