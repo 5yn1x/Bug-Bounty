@@ -105,4 +105,4 @@ echo " "
 echo " "
 echo "${blue} [+] Your Recon Succsessfully Completed!!"
 
-/usr/bin/python3 telegram_automation.py
+# /usr/bin/python3 telegram_automation.py
