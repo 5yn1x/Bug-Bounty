@@ -1,4 +1,5 @@
 #!/bin/bash
+#run tools as root user!
 
 #colors
 red=`tput setaf 1`
@@ -87,16 +88,16 @@ echo " "
 #sorting alive subdomains
 echo "${yellow} ---------------------------------- xxxxxxxx ---------------------------------- ${reset}"
 echo " "
-if [ -f /usr/local/bin/httpx ]
+if [ -f /usr/bin/httpx-toolkit ]
 then
   echo "${magenta} [+] Running Httpx for sorting alive subdomains${reset}"
-  cat ~/Desktop/$DOM/Subdomains/unique.txt | httpx >> ~/Desktop/$DOM/Subdomains/all-alive-subs.txt
+  cat ~/Desktop/$DOM/Subdomains/unique.txt | httpx-toolkit >> ~/Desktop/$DOM/Subdomains/all-alive-subs.txt
   cat ~/Desktop/$DOM/Subdomains/all-alive-subs.txt | sed 's/http\(.?*\)*:\/\///g' | sort -u > ~/Desktop/$DOM/Subdomains/protoless-all-alive-subs.txt
-else
+else 
   echo "${blue} [+] Installing Httpx ${reset}"
   go get -u github.com/projectdiscovery/httpx/cmd/httpx
   echo "${magenta} [+] Running Httpx for sorting alive subdomains${reset}"
-  cat ~/Desktop/$DOM/Subdomains/unique.txt | httpx >> ~/Desktop/$DOM/Subdomains/all-alive-subs.txt
+  cat ~/Desktop/$DOM/Subdomains/unique.txt | httpx-toolkit >> ~/Desktop/$DOM/Subdomains/all-alive-subs.txt
   cat ~/Desktop/$DOM/Subdomains/all-alive-subs.txt | sed 's/http\(.?*\)*:\/\///g' | sort -u > ~/Desktop/$DOM/Subdomains/protoless-all-alive-subs.txt
 fi
 echo " "
