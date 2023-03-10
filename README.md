@@ -1,3 +1,3 @@
 # Bug-Bounty
 
-Automation & Scripts for Bug-Bounty
+Tools & Automation & Scripts for Bug-Bounty
